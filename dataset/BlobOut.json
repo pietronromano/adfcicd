@@ -1,0 +1,21 @@
+{
+	"name": "BlobOut",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "pnrsynapselake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "adf-out"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
